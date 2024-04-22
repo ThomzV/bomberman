@@ -26,7 +26,8 @@ export let myPlayer;
 export let gameState;
 
 function createWebsocketConnection(message) {
-    ws = new WebSocket('ws://localhost:8080/');
+    //ws = new WebSocket('ws://localhost:8080/');
+    ws = new WebSocket('wss://bomberman-ikac.onrender.com/');
     ws.onopen = () => {
         console.log("Websocket connection established!");
         sendMessage(message);

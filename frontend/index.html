@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="frontend/static/styles.css" type="text/css">
+        <title>Bomberman-DOM</title>
+    </head>
+    <body>
+        <div class="header" id="header">
+            <h1>BUDGET SUPER BOMBERMAN-DOM</h1>
+        </div>
+        <div class="main-container" id="main-container">
+            <div class="left-container">
+                <div class="controls" id="controls">
+                    <h2>CONTROLS</h2>
+                    <ul>
+                        <li>Use ARROW KEYS to move the character.</li>
+                        <li>Press SPACE to plant the bomb.</li>
+                    </ul>
+                </div>
+                <div class="player-cards" id="player-cards">
+                    
+                </div>
+            </div>
+            <div class="middle-container">
+                <div class="join-lobby-container" id="join-lobby-container">
+                    <h3>Insert a nickname and join Bomberman-DOM lobby</h3>
+                    <input type="text" class="input-nickname" placeholder="Write a nickname..." maxlength="10" id="input-nickname">
+                </div>
+                <div class="game-container" id="game-container">
+                    <div class="game-status-container" id="game-status-container">
+                        <span class="game-status" id="game-status"></span>
+                        <div class="game-restart-container" id="game-restart-container">
+                            <span class="game-restart" id="game-restart"></span>
+                        </div>
+                        <div class="game-end-container" id="game-end-container">
+                            <span class="game-over-text">GAME OVER!</span>
+                            <span class="winner-text" id="winner-text"></span>
+                            <div class="podium-container">
+                                <div class="winner-bomberman" id="winner-bomberman"></div>
+                                <div class="winner-podium"></div>
+                            </div>
+                            <span class="winner-nickname" id="winner-nickname"></span>
+                        </div>
+                    </div>
+                    <div class="game-layout" id="game-layout">
+                        <div class="game-chars" id="game-chars"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="game-chat" id="game-chat">
+                    <div class="game-chat-feed" id="game-chat-feed"></div>
+                    <div class="game-chat-input" id="game-chat-input">
+                        <input type="text" placeholder="Write something..." id="input-msg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="frontend/setup.js"></script>
+</html>
